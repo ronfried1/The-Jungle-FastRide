@@ -1,0 +1,67 @@
+.rideInfo {
+  user-select: none;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  background: #373737;
+  box-sizing: border-box;
+  color: #656565;
+  margin: 4px;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.5s ease-in-out;
+}
+@media (max-width: 600px) {
+  .rideInfo{
+    width: calc((100vw - 41px) / 2);
+    height: calc((100vw - 41px) / 2);
+  }
+}
+.lineColor {
+  flex-basis: 5px;
+  flex-shrink: 0;
+}
+.content {
+  padding: 5px 5px 10px 5px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+.zone {
+  text-align: right;
+  font-weight: bold;
+  font-size: 15px;
+}
+.rideName {
+  color: white;
+  font-size: 24px;
+  margin: 20px 0;
+  text-align: center;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.bottomInfoLine {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 9px;
+  font-weight: bold;
+  font-size: 15px;
+}
+.returnTimeWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.availableTicketsWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+}
+.img {
+  width: 17px;
+  margin-right: 5px;
+}

@@ -1,0 +1,13 @@
+.ridesCardsWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 10px -4px 30px;
+    flex: 1 0 auto;
+  }
+  @media all and (max-width: 600px) {
+    .ridesCardsWrapper {
+        padding-bottom: 150px;
+        box-sizing: border-box;
+    }
+  }

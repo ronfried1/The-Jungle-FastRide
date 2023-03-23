@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    color: white;
+  }
+  @media (max-width: 600px) {
+    .container {
+      flex-basis: 100%;
+      margin: 16px 0;
+    }
+  }
+  .content {
+    margin-top: 17px;
+    text-align: center;
+    color: #656565;
+  }
+  .img {
+    width: 35px;
+    border: 1px solid gray;
+    background: #373737;
+    display: inline-flex;
+    border-radius: 50%;
+    padding: 5px;
+  }

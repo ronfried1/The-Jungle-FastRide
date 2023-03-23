@@ -1,0 +1,36 @@
+.inputWrapper {
+    display: flex;
+    margin-top: 50px;
+    flex-basis: 46px;
+    flex-shrink: 0;
+  }
+  .pinInput {
+    flex-grow: 1;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  .pinInput::placeholder{
+    font-weight: bold;
+  }
+  .sendBtn {
+    padding: 0 40px;
+    background: #4c4c4b;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+    user-select: none;
+  }
+  @media all and (max-width: 600px) {
+    .sendBtn {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: -80px;
+      width: 100vw;
+      font-size: 24px;
+      height: 80px;
+    };
+  }

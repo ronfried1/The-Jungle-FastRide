@@ -1,0 +1,42 @@
+
+.appContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  overflow-y: scroll;
+}
+.homePageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  max-width: 656px;
+  box-sizing: border-box;
+  padding: 16px;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 100px;
+  flex-shrink: 0;
+  color: white;
+  font-size: 30px; 
+  margin: 15px;
+}
+@media all and (max-width: 600px){
+  .title {
+    margin: 7px;
+    font-size: 20px;
+  }
+}
+.tm {
+  font-size: 16px;
+  padding-right: 8px;
+}
