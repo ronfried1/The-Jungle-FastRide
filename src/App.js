@@ -53,6 +53,16 @@ function App() {
   // Define a function to get the access code for a ride (called by the Submit button)
   const getAccessCode = async () => {
     try {
+      //Check the working hours
+      const now = new Date();
+      const hours = now.getHours();
+      if (hours <= 9 || hours >= 19) {
+        toast.error(
+          "Oops! Access can only be requested between 09:00 - 19:00."
+        );
+        return;
+      }
+
       // Check if there is any ride stored in local storage
       const localStorageRideInfo =
         process.env.REACT_APP_LOCAL_STORAGE_RIDE_INFO;
