@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "../styles/Input.module.css";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { cardActions } from "../store/card-slice";
 
 const Input = React.forwardRef(({ pinCode, getAccessCode, selectedRideId }, ref) => {

@@ -36,19 +36,19 @@ function App() {
   useBtnScroller(appContainerRef, cardAreaRef, buttonRef, access_code);
 
   //Request rides from API function
-  function getRidesDetails() {
-    (async () => {
-      try {
-        const ridesDetails = await getRidesData();
-        setRides(ridesDetails);
-      } catch (error) {
-        toast.error(error);
-      }
-    })();
-  }
+  const getRidesDetails = async () => {
+    try {
+      const ridesDetails = await getRidesData();
+      setRides(ridesDetails);
+    } catch (error) {
+      toast.error(error);
+    }
+  };
 
   //Call request function every refresh
-  useEffect(getRidesDetails, []);
+  useEffect(() => {
+    getRidesDetails();
+  }, []);
 
   // Define a function to get the access code for a ride (called by the Submit button)
   const getAccessCode = async () => {
